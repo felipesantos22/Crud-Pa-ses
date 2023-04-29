@@ -1,10 +1,9 @@
-const PaisModel = (sequelize, DataTypes) => {
-    const Países = sequelize.define('Paises', {
-      países: DataTypes.STRING,
-      cidades: DataTypes.STRING,
-    });
-  
-    return Países;
-  };
-  
-  module.exports = PaisModel;
+module.exports = (sequelize, DataTypes) => {
+  const paises = sequelize.define('paises', {
+    países: DataTypes.STRING,
+    cidades: DataTypes.STRING,
+    createdAt: DataTypes.DATE,
+    updatedAt: DataTypes.DATE,
+  });
+  return paises;
+};

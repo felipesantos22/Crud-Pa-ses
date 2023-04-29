@@ -1,10 +1,10 @@
-const { Paises } = require('../models/paises.model');
+const { paises } = require('../models');
 
 const getAll = async () => {
-  const paises = await Paises.findAll();
-  return paises;
+    const getP = await paises.findAll();
+    return getP;
 };
 
 module.exports = {
-  getAll,
+    getAll,
 };
