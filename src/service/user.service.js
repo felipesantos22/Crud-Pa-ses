@@ -1,7 +1,7 @@
-const { Pais } = require('../models');
+const { User } = require('../models');
 
 const getAll = async () => {
-    const getP = await Pais.findAll();
+    const getP = await User.findAll();
     return getP;
 };
 
